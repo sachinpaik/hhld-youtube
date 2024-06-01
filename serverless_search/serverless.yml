@@ -1,0 +1,17 @@
+service: serverless-search
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+functions:
+  api:
+    handler: index.handler
+    name: search-api-function
+    events:
+      - httpApi: '*'
+
+plugins:
+  - serverless-offline
