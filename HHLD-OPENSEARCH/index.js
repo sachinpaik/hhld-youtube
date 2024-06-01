@@ -20,7 +20,7 @@ app.post('/upload', async (req,res) => {
         console.log('Inside upload call');
         const { title, description, author, videoUrl } = req.body;
 
-        const host = "https://avnadmin:AVNS_yLOl32bVmAuKuCrUp4L@hhld-opensearch-sachinpaik.f.aivencloud.com:14640"
+        const host = "URL"
         const client = new Client({node:host})
         var index_name = "video";
         var document = {
